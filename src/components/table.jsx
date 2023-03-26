@@ -47,12 +47,12 @@ const Table = ({list, setlist}) => {
         <thead style = {{width : "100%", display : "flex",  }}>
           <tr className = "master">
             <th><input type="checkbox" onChange={handleSelectAll} disabled style = {{height : "25px", width : "25px", bgcolor : "blue"}}/></th>
-            <th style = {{width : "180px"}}>ID</th>
-            <th style = {{width : "180px"}}>Name</th>
-            <th style = {{width : "180px"}}>Phone Number</th>
-            <th style = {{width : "180px"}}>Email</th>
+            <th style = {{width : "200px"}}>ID</th>
+            <th style = {{width : "200px"}}>Name</th>
+            <th style = {{width : "200px"}}>Phone Number</th>
+            <th style = {{width : "200px"}}>Email</th>
             <th style = {{width : "200px"}}>Hobbies</th>
-            <th style = {{width : "180px"}}>Update/Delete</th>
+            <th style = {{width : "200px"}}>Update/Delete</th>
           </tr>
         </thead>
         <tbody>
