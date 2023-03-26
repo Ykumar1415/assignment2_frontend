@@ -21,7 +21,7 @@ const Table = ({list, setlist}) => {
   };
   useEffect(() => {
     const fetchData = async () => {
-   const x = await axios.get('http://localhost:3000/data')
+   const x = await axios.get('https://todo-backend-pks3.onrender.com/data')
     setRows(x.data)
     }
     fetchData()
@@ -80,7 +80,7 @@ const Table = ({list, setlist}) => {
               else
               {
               axios
-                .post(`http://localhost:3000/send-email`, {
+                .post(`https://todo-backend-pks3.onrender.com/send-email`, {
                   sendarray : sendarray,
                 })
                 .then(() => {
