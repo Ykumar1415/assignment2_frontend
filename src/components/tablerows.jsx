@@ -108,7 +108,7 @@ function tablerow1s({ row, sendarray, setsendarray  }) {
                 console.log(row1)
                 setLoading(true)
                 await   axios
-                    .put(`http://localhost:3000/data/${row1._id}`, {
+                    .put(`https://todo-backend-pks3.onrender.com/data/${row1._id}`, {
                       id: row1._id,
                       name: row1.name,
                       phone: row1.phone,
@@ -130,7 +130,7 @@ function tablerow1s({ row, sendarray, setsendarray  }) {
             onClick={() => {
               setLoading(true)
               axios
-                .delete(`http://localhost:3000/data/delete/${row1._id}`, {
+                .delete(`https://todo-backend-pks3.onrender.com/data/delete/${row1._id}`, {
                   
                   name: row1.name,
                   phone: row1.phone,
