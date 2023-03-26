@@ -10,7 +10,7 @@ const Table = ({list, setlist}) => {
     setRows(rows.filter((row) => row.id !== id));
   };
   const [Array, setArray] = useState([]);
- 
+ const [loading, setloading] = useState(false);
   const handleUpdate = (id, field, value) => {
     setRows(rows.map((row) => {
       if (row.id === id) {
@@ -79,16 +79,18 @@ const Table = ({list, setlist}) => {
               }
               else
               {
-              axios
+                setloading(true);
+              await axios
                 .post(`https://todo-backend-pks3.onrender.com/send-email`, {
                   sendarray : sendarray,
                 })
                 .then(() => {
                   alert("success");
+                setloading(false);
                 })
              }}}
           >
-           Send
+            {loading ? "sending" : "send"}
           </button>
           </div>
     </div>
