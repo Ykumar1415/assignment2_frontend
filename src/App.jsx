@@ -23,7 +23,7 @@ function App() {
   // }, [5000]);
   useEffect(() => {
     const fetchData = async () => {
-      const x = await axios.get("http://localhost:3000/data");
+      const x = await axios.get("https://todo-backend-pks3.onrender.com/data");
       setRows(x.data);
         setLoading(false);
         console.log(x.data)
