@@ -4,4 +4,5 @@
 npm install
 
 <p>To start the app </p>
+
 npm start
