@@ -3,6 +3,6 @@
 <p>To install dependencies</p>
 npm install
 
-<p>To start the app </p>
+<h4>To start the app </h4>
 
 npm start
